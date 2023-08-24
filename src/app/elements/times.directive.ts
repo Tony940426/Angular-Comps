@@ -12,7 +12,7 @@ export class TimesDirective {
     @Input('appTimes') set rennder(times: number) {
       this.viewContainer.clear();
       for(let i = 0; i < times; i++) {
-        this.viewContainer.createEmbeddedView(this.templateRef {})
+        this.viewContainer.createEmbeddedView(this.templateRef, {})
       }
     }
 }
