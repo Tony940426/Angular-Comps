@@ -6,8 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent implements OnInit {
-  @Input() data: { name: string; age: number; job: string; }[] = [];
-  @Input() headers: { key: string; label: string; }[] = [];
+  @Input() data: { name: any; age: any; job: any; }[] = [];
+  @Input() headers: { key: any; label: any; }[] = [];
 
 constructor(){}
 
