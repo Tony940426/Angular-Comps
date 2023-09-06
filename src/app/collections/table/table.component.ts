@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+type RecordKey = 'name' | 'age' | 'job';
 
 @Component({
   selector: 'app-table',
@@ -7,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TableComponent implements OnInit {
   @Input() data: { name: any; age: any; job: any; }[] = [];
-  @Input() headers: { key: any; label: any; }[] = [];
+  @Input() headers: { key: RecordKey; label: string; }[] = [];
 
 constructor(){}
 
